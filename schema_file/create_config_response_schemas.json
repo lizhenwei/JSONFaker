@@ -1,0 +1,42 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Code",
+    "Internal",
+    "Message"
+  ],
+  "properties": {
+    "Code": {
+      "$id": "#/properties/Code",
+      "type": "integer",
+      "title": "The Code Schema",
+      "default": 0,
+      "examples": [
+        4000102
+      ]
+    },
+    "Internal": {
+      "$id": "#/properties/Internal",
+      "type": "null",
+      "title": "The Internal Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "Message": {
+      "$id": "#/properties/Message",
+      "type": "string",
+      "title": "The Message Schema",
+      "default": "",
+      "examples": [
+        "Config Name already exists"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

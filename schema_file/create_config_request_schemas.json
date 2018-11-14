@@ -1,0 +1,55 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "configdescription",
+    "envvariable",
+    "environment_id",
+    "configname",
+    "configfile"
+  ],
+  "properties": {
+    "configdescription": {
+      "$id": "#/properties/configdescription",
+      "type": "string",
+      "title": "The Configdescription Schema",
+      "default": "",
+      "examples": [
+        "c"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "envvariable": {
+      "$id": "#/properties/envvariable",
+      "type": "object",
+      "title": "The Envvariable Schema"
+    },
+    "environment_id": {
+      "$id": "#/properties/environment_id",
+      "type": "integer",
+      "title": "The Environment_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "configname": {
+      "$id": "#/properties/configname",
+      "type": "string",
+      "title": "The Configname Schema",
+      "default": "",
+      "examples": [
+        "qa-test-config2"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "configfile": {
+      "$id": "#/properties/configfile",
+      "type": "object",
+      "title": "The Configfile Schema"
+    }
+  }
+}
